@@ -1,7 +1,8 @@
 # ActiveMicrofinance
 
-TODO: Write a gem description
+ActiveMicrofinance aims to become a reliable Ruby API interface for different microfinance services, starting with Kiva.com, a well-known microfinance nonprofit organization.
 
+You can read more about microfinance in [here](http://www.kiva.org/about/microfinance)
 ## Installation
 
 Add this line to your application's Gemfile:
