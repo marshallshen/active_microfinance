@@ -3,11 +3,12 @@
 ActiveMicrofinance aims to become a reliable Ruby API interface for different microfinance services, starting with Kiva.com, a well-known microfinance nonprofit organization.
 
 You can read more about microfinance in [here](http://www.kiva.org/about/microfinance)
+You can find kiva API documentation in [here](http://build.kiva.org/api)
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'ActiveMicrofinance'
+    gem 'active_microfinance'
 
 And then execute:
 
@@ -15,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ActiveMicrofinance
+    $ gem install active_microfinance
 
 ## Usage
 
