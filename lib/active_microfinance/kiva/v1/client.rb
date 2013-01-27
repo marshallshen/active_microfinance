@@ -4,27 +4,18 @@ module ActiveMicrofinance
       class Client
         include ActiveMicrofinance::Kiva::V1::ServiceUris
 
-        attr_accessor :category, :field, :format
+        attr_accessor :uri
 
-        def initialize(options={})
-          @category = options[:category]
-          @field = options[:field]
-          @format = options[:format] || "json"
+        def initialize(uri)
+          @uri = uri
         end
 
         def get
-          uri = URI.parse(source)
-          response = Net::HTTP.get_response(uri)
-          response.body if response.code == 200
-        end
-
-        private
-        def source
-          "#{host}/#{@category}/#{@field}.#{@format}"
-        end
-
-        def host
-          "http://api.kivaws.org/v1/"
+          url = URI.parse(source(uri))
+          response = Net::HTTP.get_response(url)
+          # for now defaults the format to JSON
+          # aim to support more formats in the future
+          JSON.parse(response.body) if response.code == "200"
         end
       end
     end
