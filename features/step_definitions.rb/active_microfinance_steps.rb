@@ -13,3 +13,15 @@ end
 When /^I query API "(.*?)" api with id "(.*?)"$/ do |arg1, id|
   pending # express the regexp above with the code you wish you had
 end
+
+Given /^Kiva has parsed api "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I write the response body to file "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^I should have a new file called "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
