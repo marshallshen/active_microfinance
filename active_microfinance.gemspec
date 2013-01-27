@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ActiveMicrofinance/version'
+require 'active_microfinance/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "ActiveMicrofinance"
+  gem.name          = "active_microfinance"
   gem.version       = ActiveMicrofinance::VERSION
   gem.authors       = ["Marshall Shen"]
   gem.email         = ["mshen@groupon.com"]
